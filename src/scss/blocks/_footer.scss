@@ -1,0 +1,159 @@
+.footer {
+	background-color: #141718;
+	padding: 80px 0 32px 0;
+
+	@include mobile {
+		padding: 48px 0;
+	}
+}
+
+.footer__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 50px;
+
+	@include mobile {
+		padding-bottom: 40px;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.logo__link {
+	font-size: 24px;
+	font-weight: 500;
+	font-family: var(--font-accent);
+
+	color: #FFF;
+
+	span {
+		color: #6C7275;
+	}
+}
+
+.logo__border {
+	width: 1px;
+	height: 24px;
+	background-color: #6C7275;
+
+	@include mobile {
+		width: 24px;
+		height: 1px;
+	}
+}
+
+.logo__desc {
+	font-size: 14px;
+	font-weight: 400;
+
+	color: #E8ECEF;
+}
+
+.footer__list {
+	display: flex;
+	gap: 40px;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+}
+
+.footer__item {
+	color: #E8ECEF;
+}
+
+.footer__link {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+
+	color: #FEFEFE;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		color: #6C7275;
+		transition: all .3s ease-in-out;
+	}
+}
+
+.footer__arrp {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding-top: 16px;
+
+	border-top: 0.5px solid #6C7275;
+
+	font-family: var(--font-accent);
+
+	@include mobile {
+		padding: 24px;
+		flex-direction: column;
+		gap: 32px;
+	}
+}
+
+.arrp__desc {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+
+	
+	@include mobile {
+		flex-direction: column-reverse;
+	}
+}
+
+.desc__copyright {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+
+	color: #E8ECEF;
+
+	@include mobile {
+		text-align: center;
+	}
+}
+
+.desc__copyright-links {
+	display: flex;
+	gap: 28px;
+	align-items: center;
+
+
+}
+
+.desc__link {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+
+	color: #FEFEFE;
+}
+
+.arrp__social {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	@include mobile {
+		order: -1;
+	}
+}
